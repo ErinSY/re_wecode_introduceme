@@ -1,0 +1,75 @@
+/* header */
+.header{
+  background-color:rgb(247, 248, 233);
+  height:100vh;
+  width:100%;
+  position: relative;
+}
+
+/* menubar */
+.menubar{
+  height:100vh;
+  width: 18%;
+  background-color: rgb(255, 137, 3);
+  color: aliceblue;
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+}
+.menubar-list{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 100px;
+
+}
+
+.menubar .logo{
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100px;
+}
+.menubar li{
+  line-height: 150px;
+  list-style:none;
+  font-size: 30px;
+}
+/* .menubar .about:hover{
+  font-size: 0;
+} */
+/* .menubar .about:hover:after{
+  display:none;
+  content: '누구?!';
+} */
+
+
+.header .inner {
+  position: absolute;
+  top:8%;
+  left:40%;
+
+}
+
+.header .table {
+  width: 700px;
+  height: 700px;
+  table-layout: fixed;
+  overflow: hidden;
+  
+}
+
+.header .table img{
+  width:100%;
+  height:100%;
+  border-radius: 7%;
+}
+
+.header .table h2{
+  font-family: 'Gaegu', cursive;
+  font-size: 60px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 45%;
+}
