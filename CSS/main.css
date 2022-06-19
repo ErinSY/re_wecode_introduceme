@@ -45,7 +45,7 @@ table {
 /* header */
 .header{
   background-color:rgb(247, 248, 233);
-  height:100vh;
+  height:100%;
   width:100%;
   position: relative;
 }
@@ -57,26 +57,56 @@ table {
   background-color: rgb(255, 137, 3);
   color: aliceblue;
   font-family: 'Comfortaa', cursive;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 0;
   position: relative;
-}
-.menubar-list{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translateX(-50%) translateY(-50%);
-  line-height: 100px;
-
 }
 
 .menubar .logo{
-  font-size: 40px;
+  font-size: 45px;
   font-family: 'Lobster', cursive;
   font-weight: bolder;
+  position:absolute;
+top:20px;
+
+}
+
+.logo a {
+  color:white;
+  text-decoration: none;
   text-align: center;
-  line-height: 100px;
+}
+
+.logo a:hover{
+  color:rgb(255, 251, 3);
+
+}
+
+.logo a:active{
+  color:rgb(255, 3, 3);
+
+
+}
+
+.logo a:visited {
+  color:indigo;
+ 
+}
+
+.menubar ul{
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
 }
 .menubar li{
-  line-height: 150px;
   list-style:none;
   font-size: 30px;
 }
@@ -91,7 +121,7 @@ table {
 
 .header .inner {
   position: absolute;
-  top:1%;
+  top:5%;
   left:40%;
 
 }
