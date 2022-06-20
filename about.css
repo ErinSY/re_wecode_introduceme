@@ -50,6 +50,8 @@ table {
   height:100%;
   width:100%;
   position: relative;
+  display: flex;
+  
 }
 
 /* menubar */
@@ -74,6 +76,7 @@ table {
 top:40px;
 }
 
+
 .header a {color:bisque;
 text-decoration: none;}
 .header a:hover{
@@ -96,13 +99,11 @@ text-decoration: none;}
   font-size: 30px;
 }
 
-/* .menubar ul li a{
-  transform: all 1s linear;
 
-} */
-.menubar ul li:hover {
-  transform: scale(2) ;
-  transition-duration: 0.5s;
+.menubar ul li a strong{
+color: rgb(165, 76, 3);
+font-size: 60px;
+font-weight: bolder;
 }
 .icons{
   position: absolute;
@@ -119,31 +120,14 @@ i{
   padding:5px
 }
 
+
 .header .inner {
   position: absolute;
-  top:5%;
+  top:25%;
   left:40%;
-}
-
-.header .table {
-  width: 650px;
-  height: 650px;
-  table-layout: fixed;
-  overflow: hidden;
-  
-}
-
-.header .table img{
-  width:90%;
-  height:90%;
-  border-radius: 7%;
-  
-}
-
-.header .table h2{
   font-family: 'Gaegu', cursive;
-  font-size: 50px;
-  font-weight: bolder;
-  text-align: center;
-  margin-top: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+ height: 600px;
 }
