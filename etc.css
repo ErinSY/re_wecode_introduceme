@@ -1,0 +1,160 @@
+/* 공통 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,a
+b, u,  center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* header */
+.header{
+  background-color:rgb(247, 248, 233);
+  height:100%;
+  width:100%;
+  position: relative;
+  display: flex;
+  
+}
+
+/* menubar */
+.menubar{
+  height:100vh;
+  width: 18%;
+  background-color: rgb(255, 137, 3);
+  font-family: 'Comfortaa', cursive;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+.menubar .logo{
+  font-size: 60px;
+  font-family: 'Lobster', cursive;
+  font-weight: bolder;
+  position:absolute;
+top:40px;
+}
+
+
+.header a {color:bisque;
+text-decoration: none;}
+.header a:hover{
+  color:rgb(87, 38, 1)
+}
+.header a:active{
+  color:rgb(255, 196, 0)
+}
+
+
+
+.menubar ul{
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+  list-style:none;
+  font-size: 30px;
+}
+
+
+.menubar ul li a strong{
+color: rgb(165, 76, 3);
+font-size: 60px;
+font-weight: bolder;
+}
+.icons{
+  position: absolute;
+  bottom:60px
+}
+
+.btn:active, .btn:focus{
+outline:none !important;
+box-shadow:none !important;
+}
+
+i{
+  color: bisque;
+  padding:5px
+}
+
+
+.header .inner {
+  position:absolute ;
+  width:82%;
+  right:0;
+  top:0;
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.inner .dice h1{
+  color:rgb(67, 176, 140);
+  font-size: 8rem;
+  /* text-shadow: 5px 0 #232931; */
+  font-family: 'Gaegu', cursive;
+}
+
+.inner .dice h2{
+  color:rgb(67, 176, 140);
+  font-size: 4rem;
+  /* text-shadow: 5px 0 #232931; */
+  font-family: 'Gaegu', cursive;
+}
+.player{
+ 
+  text-align: center;
+display: inline-block;
+margin-right: 10px;
+}
+.inner .dice{
+  text-align: center;
+  width:70%;
+  margin: auto;
+  font-family: 'Comfortaa', cursive;
+}
